@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
+
+/* Bydefaukt the font weight is 400 or 300 normal */
+/* And in the heading like bold. The bold weight/value is 700 */
+/* It depends on how much the values does font support */
+h1{
+    font-weight: 100;
+    /* font-style: italic; */
+    font-family: 'Poppins', sans-serif;
+    /* Bydefault the heading font support only 400 and 700 */
+}
+
+p{
+    /* The normal font is like 400 */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    /* font-style: italic; */
+    /* font-weight: normal; */
+}
+
+/* Now lets import the font from goolge */

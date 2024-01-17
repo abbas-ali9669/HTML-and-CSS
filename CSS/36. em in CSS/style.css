@@ -1,0 +1,12 @@
+/* this em is inheriting size from its parent and multiply it. This em property is related to the other property */
+
+h1{
+    font-size: 2em;
+    border: 2em solid black;
+
+}
+
+.box1{
+    font-size: 20px;
+    
+}

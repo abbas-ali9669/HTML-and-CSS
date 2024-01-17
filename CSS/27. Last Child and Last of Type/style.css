@@ -1,0 +1,9 @@
+/* This will change the color of last paragraph of the parent not second last only last if */
+p:last-child{
+    color:blue;
+}
+
+/* This will modify the last p tag this include the second last */
+/* p:last-of-type{
+    color: green;
+} */

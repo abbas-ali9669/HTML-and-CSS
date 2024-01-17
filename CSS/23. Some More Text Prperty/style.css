@@ -1,0 +1,23 @@
+h1{
+    font-size: 40px;
+    /* Now lets talk about some text decoration */
+    /* There are three options underline, overline, linethrough */
+    text-decoration: underline solid red;
+    letter-spacing: 5px;
+}
+
+p{
+    /* First one is font size that you can change the size of font size Bydefault is 16px */
+    font-size: 20px;
+
+    /* Spacing/height between line/row */
+    line-height: 40px;
+
+    /* Word Spacing */
+    word-spacing: 5px;
+
+    /* Letter spacing */
+    letter-spacing: 5px;
+
+}
+

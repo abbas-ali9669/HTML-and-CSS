@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 800px;
+    /* height: 500px; */
+    border: 10px solid green;
+    /* padding: 10px; */
+    margin: 50px 0px;
+    /* position: relative; */
+}
+
+.container h1{
+    border: 5px solid red;
+    background-color: yellow;
+    /* position: relative;  */
+    /* From this we will move our component top bottom left right */
+    /* top: 150px; */
+    /* bottom: 50px; */
+    /* left: 100px; */
+    /* right: 100px; */
+    
+
+    /* z-index is for transparenting the widget/component. Bydefault value is 0/auto but for transparenting use value -1. It will disappear */
+    z-index: 0;
+    /* position: absolute; */
+    /* The position absolute is elemeent will out from documnet flow and you can move around on the whole viewport. It will consider the whole page/viwport. With the help of this we can center the things  */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* This is a trick to center thing/widget or components */
+
+}
+
+.container h3{
+    background-color: black;
+    color: white;
+    /* width: 100%; */
+    /* position: fixed; */
+    /* In the position the element will out from document flow like absolute unit. This very usefull to create navbar in the top of screen. */
+    /* NOTE - Sometime it will disappear on the bottom of other component. To fix this issue we will give the value of z-index to bigger number like 5 or 10 */
+    /* top: 0px; */
+    /* z-index: 10; */
+
+    position: sticky;
+    /* The position sticky will not out from its document flow this will work as a relative unit. It is working with scrolling events when we scroll and when its parent will disappear from viewport it will also disappear */
+    /* To get rid from this problem use the that element out of any parent freely  */
+    top: 5px;
+}
+
+.container p{
+    background-color: rgb(192, 192, 192);
+    border: brown 5px solid;
+}
+

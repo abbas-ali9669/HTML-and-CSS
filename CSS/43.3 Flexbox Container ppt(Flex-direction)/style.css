@@ -1,0 +1,43 @@
+/* Here we will apply container propert in the flexbox container */
+/* There are 4 main values of flex-direction: (row, row-reverse, column, column reverse) flexbox conatainer */
+
+.container{
+    border: 5px solid black;
+    display: flex;
+    /* flex-direction: row; */
+        /* NOTE - Bydefault Property */
+    /* flex-direction: row-reverse; */
+        /* NOTE - This property will reverse the flexbox items */
+    /* flex-direction: column; */
+        /* NOTE - This property will change the Axis of item from top to down */
+    /* flex-direction: column-reverse; */
+        /* NOTE - This property will change the Axis of item from top to down. And reverse the items */
+}
+
+.box{
+    border: 2px solid red;
+    padding: 5px;
+}
+
+.box-1{
+    background: lightslategray;
+}
+.box-2{
+    background: lightgray;
+}
+.box-3{
+    background: lightgreen;
+}
+.box-4{
+    background: lightpink;
+}
+.box-5{
+    background: lightseagreen;
+}
+
+/* Some practice with responsivness */
+@media (max-width: 500px){
+    .container{
+        display: block;
+    }
+}

@@ -1,0 +1,54 @@
+/* Flex-grow - is th property which we can use to manage/occupy the extra space in the flex-container */
+/* We will pass the integer value in it. And tell that how many time should the item take space */
+/* Bydefault the flex-grow value is 0. */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+}
+
+.box{
+    border: 2px solid #ad6a6a;
+    padding: 5px;
+    width: 300px;
+    /* flex-grow: 1; */
+        /* With the value of one each item will divide the extra space in it */
+        /* But if we want some more space in some items  then we will use 1, 2 or 3  */
+}
+
+.box-1{
+    background: lightslategray;
+    flex-grow: 1;
+}
+
+.box-2{
+    background: lightgray;
+    flex-grow: 1;
+}
+
+.box-3{
+    background: lightgreen;
+    flex-grow: 1;
+}
+
+
+
+
+.box-4{
+    background: lightpink;
+}
+
+.box-5{
+    background: lightseagreen;
+}
+
+/* Some practice with responsivness */
+@media (max-width: 500px){
+    .container{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

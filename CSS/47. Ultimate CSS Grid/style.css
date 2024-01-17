@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/* Q - What is implicit and explicit */
+/* A (Explicit) - implicit is what we decide to do */
+/* A (Implicit) - Explicit is what the machine/software decide to do */
+
+
+/* Gird Terminologies - Grid Container, Grid Items */
+
+/* NOTE - We do not use the %, px etc in the grid system. We uses fraction Unit. Fraction unit are very flexible unit in the CSS Grid  */
+
+.container{
+    border: 2px solid red;
+    max-width: 1200px;
+    height: 500px;
+    margin: 2rem auto;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr);      Explicity Defined column. We can also use repeat() Function for creating columns. */
+        /* This is the setting for column of the grid. And the rows has been decided by the browser. Here we decide our column that how much columns we need. */
+    /* column-gap: 10px;
+    row-gap: 10px; */
+        /* No matter how much gap you give to column/row when we use fractions */
+    /* gap: 10px 10px; */
+        /* Short Hand Row and Column gap are (gap: row-gap, column-gap;) */
+    
+    /* Now we will work with rows */ 
+    /* If you want the explicit rows then you have give the unit to each row */
+
+    /* grid-template-rows: 100px 100px; */
+        /* This method will change only first and second row of the grid not all */
+    /* For all row you have to give implicitely cordinates */
+    /* grid-auto-rows: 100px; */
+        /* This method will change the size of all rows in the grid container */
+    
+    /* Q - Why row mades ? not column */
+    /* A - For this we have one function for converting into the row called */
+    /* grid-auto-flow: dense;  Bydefault: row; */
+        /* This method will not split the column into the new line (Not Usefull) if the value is 'column' */
+    
+
+    /* 1. And now we will talk about grid flexibilty. What if we dont want to shrinnk one of columns in grid */
+    /* grid-template-columns: 300px repeat(2, 1fr); */
+        /* No here we dont want to shrink frist column. We have to explain explicitely. Then the column will shrink*/
+    
+    /* 2. And in the second what happen if we want multiple auto fill columns */
+    /* grid-template-columns: repeat(auto-fill, 250px); */
+    /* grid-template-columns: repeat(auto-fit, 250px); */
+        /* Q - What is the difference between auto-fill and auto auto-fit */
+        /* A - The auto-fill make the extra column invisibly(You can inspect). And auto-fitt doesnot make extra column if need they make */
+    
+    /* And now in this case the size of the boxes are fixed. But we can make fleixbile too by using minmax function */
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) */
+
+    /* And now here we will redesign all the procedure to see the other properties of grid */
+
+    gap: 10px;
+    grid-template-columns: repeat(3, 150px);
+    /* justify-items: stretch;    bydefault - Stretch (It is working with the horizontally) */
+
+    /* align-items: stretch;    Bydefault - Stretch (It is working with verticaly) */
+
+    /* The shorthand for the both properies */
+    /* place-items: stretch stretch;    place-items: align-items justify items; */
+
+
+    /* Now we will see content alignment. */
+    /* justify-content: space-evenly;    Working with horizontally */
+    /* align-content: start;    Working vertically */
+
+    /* Shorthand for the boht alignment of content */
+    /* place-content: start space-evenly; */
+
+    grid-auto-flow: dense;
+        /* This is the dense packing algorithm use for utilising the extra space in the grid container */
+
+}
+
+.container .item{
+    border: 2px solid black;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    /* https://cssgradient.io/gradient-backgrounds/ 
+         For background linear color */
+    color: #fff;
+    padding: 10px;
+}
+
+/* And now from here we will see the grid items properties. That how we can work with grid items */
+
+/* 1. Now here we want from the item1 to occupy the space of two columns or rows */
+
+.items1{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+
+    /* The short hand for the both row and the columns */
+    /* grid-column: 1 / 3;
+    grid-row: 1 / 3; */
+
+    /* grid-column: span 2;
+    grid-row: span 2; */
+
+    /* span - Span is used to represent the starting point of the row/column */
+
+    /* grid-column: 1 / 3; */
+    /* grid-row: 1 / 3; */
+
+    /* justify-self: start;     Working with horizontally */
+    /* align-self: start;       Working with Vertically */
+
+    /* Shorthand */
+    /* place-self: center center; */
+    grid-column: 1 / -1;
+
+}
+
+.items10{
+    grid-column: span 2;
+}
+
+.items8{
+    /* grid-column: 1 / -1; */
+    /* Now here is the problem. Which is other items that are miss placed and there is some left for the column. How we can fill that columns. We will use the dense property for the filling of the columns (grid container property) */
+    grid-column: span / 1;
+}

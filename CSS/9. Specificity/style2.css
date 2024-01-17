@@ -1,0 +1,28 @@
+/* Inline CSS > #id selector > class selector > element selector */
+
+/* This will work */
+div#container ul.unordered li{
+    background-color: brown;
+    color: yellow;
+}
+/* Specificity count: */
+/* 0, 1, 1, 3 ---> 113*/
+
+/* this will not work bcoz of sprcificty */
+li.favourite{
+    color: burlywood;
+}
+
+/* Now lets count the specificty */
+/* Lets take the four numbers */
+/* Inline CSS used ? _, id selector used ? _, class selector used ? _, element selector used ? _ */
+/* If anyone used then count how much time it used and fill these four blanks with number that how many times they used. */
+
+
+/* Now this will work */
+div#container ul.unordered li.favourite{
+    background-color: yellow;
+    color: brown;
+}
+/* Specificity count: */
+/* 0, 1, 2, 3 ---> 123. 123 > 113 */

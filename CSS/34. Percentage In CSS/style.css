@@ -1,0 +1,21 @@
+/* The percentage will inherit its value from its parent. If the body has 16px of font size and then if we apply 100% of font size in our sub element the font size will be same  */
+/* The percentage mostly used in widget width not in the font mostly */
+
+
+div{
+    border: 2px solid red;
+    width: 50%;
+}
+
+p{
+    box-sizing: border-box;
+    /* it will inherit the font from its parent */
+    font-size: 100%;
+    border: 2px solid green;
+    width: 50%;
+    margin-left: 25%;    /* It is the trick to center your widget/component. But not recomended */
+    text-align: center;
+    /* margin: 5px auto; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

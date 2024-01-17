@@ -1,0 +1,19 @@
+/* (2) ---> Only change the color of second child */
+/* (2n) ---> Will change all the color after skipping 1 */
+/* (2n+1) ---> This will change the sequence into the even to odd */
+
+/* p:nth-child(2){
+    color: blue;
+} */
+
+
+p:nth-of-type(2){
+    color: green;
+}
+
+
+
+li:nth-of-type(2n){
+    color: blue;
+    background-color: lightblue;
+}

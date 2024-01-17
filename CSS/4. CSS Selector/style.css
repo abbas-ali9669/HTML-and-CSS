@@ -1,0 +1,19 @@
+/* For selecting class we use .  */
+.main-heading{
+    color: #efefef;
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}   
+
+/* For selecting id we use # */
+#sub-heading{
+    background-color: #efefef;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.first-para{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}

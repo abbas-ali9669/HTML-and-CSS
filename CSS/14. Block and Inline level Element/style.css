@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+/* We can change its proprty to block level to inline and inline to block level */
+/* Also we can apply top bottom left right margin and padding */
+/* Block level element always start from new line */
+
+h1, h2{
+    border: solid 4px red;
+    /* display: inline; */
+    /* margin: 20px 50px; */
+    /* padding: 50px 100px; */
+    width: 500px;
+}
+
+/* Now come to the inline element */
+/* Here we can give padding onthe left and the right but we cannot give the pading on the top bottom. It support top bottom padding but the output is not good */
+/* We can also change its property to block level */
+/* It dones not support top bottom margin even if you give 500px margin it will not work but also support left right padding */
+
+a{
+    border: solid 3px #222;
+    /* padding: 30px 50px; */
+    margin: 100px 10px;
+    /* display: block; */
+
+}

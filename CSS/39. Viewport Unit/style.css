@@ -1,0 +1,19 @@
+/* First We will watch the vw and vh */
+/* h1{
+    border: 2px solid black;
+    width: 95vw;
+    NOTE - vw/vh is not working with their parents. This works with viewport means how much area of screen we watching
+    height: 100vh;
+    background-color: chocolate;
+} */
+
+.box1{
+    border: 2px solid black;
+    width: 50%;
+}
+
+h1{
+    border: 2px solid red;
+    /* Ith will collapse because it will not see the parent it will see the viwport width or height. So in this case it will collapse the its parent border */
+    width: 50vw;
+}

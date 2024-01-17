@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        .header{
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/background-img.jpg");
+            height: 90vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .navbar{
+            border: 2px solid black;
+        }
+        
+        .container{
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .heading{
+            float: left;
+            font-size: 3rem;
+            letter-spacing: 0.15em;
+            color: #333333;
+            margin-top: 1rem;
+        }
+        .navbar .nav-items{
+            float: right;
+            list-style: none;
+            padding: 10px;
+        }
+        .navbar .nav-item{
+            display: inline-block;
+            padding: 10px;
+            font-size: 1.5rem;
+            letter-spacing: 0.15em;
+        }
+
+        .navbar a:link, 
+        .navbar a:visited{
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #333333;
+        }
+
+        .navbar a:hover{
+            border-bottom: 2px solid #333333;
+
+        }
+
+        .navbar:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <h2 class="heading">Heading</h2>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>        
+    </header>
+    
+</body>
+</html>

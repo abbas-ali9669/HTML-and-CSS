@@ -1,0 +1,14 @@
+/* We cannot use these element with img, br, hr, and all replaced element */
+
+p::before{
+    content: 'Paragraph 1 ';
+    display: block; /* Bydefault is inline*/
+    font-weight: 400;
+}
+
+h2::after{
+    content: 'Hello my name is Abbas Ali';
+    display: block;
+    font-weight: 400;
+    font-size: 17px;
+}

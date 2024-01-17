@@ -1,0 +1,53 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: lightpink;
+    /* transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: ease-inout; */
+
+    /* The short hand */
+    /* transition: background 1s ease-in-out,
+                width 1s ease-in-out,
+                height 1s ease-in-out; */
+    
+    /* instead of writing with, height and backgrounf we can simply type all for any typ od transition */
+    transition: all 1s ease-in-out;
+    
+}
+
+.box:hover{
+    width: 150px;
+    height: 150px;
+    background: lightcoral;
+}
+
+
+.btn{
+    /* width: auto;
+    height: 50px; */
+    transition: all 1s ease-in;
+    display: inline-block;
+    margin: 10px auto;
+    background: lightcoral;
+    text-transform: uppercase;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .15em;
+    font-weight: 700;
+    
+}
+
+.btn:hover{
+    padding: 10px 50px;
+    color: lightcyan;
+    background: linear-gradient(25deg, #dd477ee1, #ee4758ce 50%);
+    box-shadow: 5px 5px 30px 0px lightgray;
+    border-radius: 100px;
+    font-size: 20px;
+}

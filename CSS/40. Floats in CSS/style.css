@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+.fav-player{
+    border: 4px solid red;
+}
+
+.shahid{
+    border: 2px solid green;
+    width: 25%;
+    background-color: lightcyan;
+    float: left;
+    padding: 10px;
+    height: 100%;
+}
+
+.ronnie{
+    border: 2px solid brown;
+    background-color: burlywood;
+    width: 25%;
+    float: left ;
+    padding: 10px;
+    height: 100%;
+}
+
+.babar-azam{
+    border: 2px solid yellow;
+    width: 25%;
+    background-color: lightgreen;
+    float: left;
+    padding: 10px;
+    height: 100%;
+}
+
+.shaheen{
+    border: 2px solid chartreuse;
+    width: 25%;
+    float: left;
+    background-color: lightskyblue;
+    padding: 10px;
+    height: 100%;
+}
+.shaheen h2{
+    text-decoration: underline;
+}
+
+/* There are two methods to clear flow of div  */
+/* 1.(Mostly Used) Create an empty div and specify with the property of clear: both; */
+
+/* .clear-fix{
+    clear: both;
+} */
+
+
+/* 2.(Recommended) Use the pseudo element ::after: We will convert it into the block and set the property of clear: both;  */
+.fav-player::after{
+    content: "";
+    display: block;
+    clear: both;
+}

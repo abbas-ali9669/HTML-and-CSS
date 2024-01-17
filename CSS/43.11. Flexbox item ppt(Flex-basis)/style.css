@@ -1,0 +1,44 @@
+/* Flex-basis - Initial lenght of a flex-item towards the main-axis. Just like the width. But its not the width. Flex-basis has the more specificity than width */
+/* NOTE - If you will change the flex-direction the flex-basis will chenge out their axis to top to down means vertcaly. Bacause flex-direction chnage the main-axis to top to down therefore the flex-basis change thier axis top ot down means height */
+
+
+.container{
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.box{
+    border: 2px solid rgb(173, 106, 106);
+    padding: 5px;
+    width: 800px;    /* This will not work. Flex-basis will work */
+    flex-basis: 400px;
+}
+
+.box-1{
+    background: lightslategray;
+}
+
+.box-2{
+    background: lightgray;
+}
+
+.box-3{
+    background: lightgreen;
+}
+
+.box-4{
+    background: lightpink;
+}
+
+.box-5{
+    background: lightseagreen;
+}
+
+/* Some practice with responsivness */
+@media (max-width: 500px){
+    .container{
+        display: block;
+    }
+}

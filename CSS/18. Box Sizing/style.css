@@ -1,0 +1,29 @@
+hr{
+    width: 500px;
+    margin-left: 0px;
+}
+
+.box1{
+    margin: 20px auto;
+    /* Now here in this box we will set the property of box sizing */
+    box-sizing: border-box;
+    width: 500px;
+    margin-bottom: 10px;
+    background-color: coral;
+    border: 10px #ff0000 solid;
+    padding: 50px;
+}
+
+h2{
+    text-align: center;
+}
+
+
+/* Now in this box here we can easily see the different we give the width of 500px but the box is increasing its width by give pading and border */
+.box2{
+    margin: 20px auto;
+    width: 500px;
+    background-color: coral;
+    border: 10px solid red;
+    padding: 50px;
+}

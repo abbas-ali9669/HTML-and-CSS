@@ -1,0 +1,17 @@
+/* The rem attirbute inherit its size from root/html element  */
+html{
+    /* We can also use :root instead of html */
+    /* font-size: 10px; */
+
+    font-size: 62.5%; /* This method will make our website responsive */
+    /* 16px --> 100% */
+    /* 10 --> 100/16*10 */
+
+}
+
+.text{
+    font-size: 2rem;
+    margin: 1rem;
+    border: 1rem solid red;
+    padding: 1rem;
+}

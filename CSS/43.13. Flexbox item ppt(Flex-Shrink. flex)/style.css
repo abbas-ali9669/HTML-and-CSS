@@ -1,0 +1,53 @@
+/* Flex-shrink, We will pass the value of integer into it and tell that how much width/space we want inn the specific item */
+/* And on the other hand the flex property is the short hand of writing 3 multiple property in to the one (flex-grow, flex-shrink, flex-basis) in one place */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    border: 2px solid #ad6a6a;
+    padding: 5px;
+    width: 600px;
+    flex: 3 4 400px;
+    /* flex-shrink: 1; */
+}
+
+.box-1{
+    background: lightslategray;
+    /* flex-shrink: 1; */
+}
+
+.box-2{
+    background: lightgray;
+    /* flex-shrink: 2; */
+}
+
+.box-3{
+    background: lightgreen;
+    /* flex-shrink: 3; */
+}
+
+
+
+
+.box-4{
+    background: lightpink;
+}
+
+.box-5{
+    background: lightseagreen;
+}
+
+/* Some practice with responsivness */
+@media (max-width: 500px){
+    .container{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

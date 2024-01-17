@@ -1,0 +1,52 @@
+/* There are four values of alugn-item: (Stretch, flex-start, flex-end, center) */
+/* Align-item is connected with the cross-axis. On the other hand justify-content is aligned with the main-axis */
+
+.container{
+    height: 550px;
+    border: 5px solid black;
+    display: flex;
+    /* align-items: stretch; */
+        /* Bydefault */
+    
+    /* align-items: flex-start; */
+        /* This will align item in the start of the cross-axis */
+
+    /* align-items: flex-end; */
+        /* This will align the items in the end of the cross-axis */
+    
+    /* align-items: center; */
+        /* This will align the items in the center of the cross axis */
+
+    /* Then if chnage the direction of flex. Then this method works perpendicularly. */
+}   
+
+
+.box{
+    border: 2px solid red;
+    padding: 5px;
+    width: 200px;
+    
+}
+
+.box-1{
+    background: lightslategray;
+}
+.box-2{
+    background: lightgray;
+}
+.box-3{
+    background: lightgreen;
+}
+.box-4{
+    background: lightpink;
+}
+.box-5{
+    background: lightseagreen;
+}
+
+/* Some practice with responsivness */
+@media (max-width: 500px){
+    .container{
+        display: block;
+    }
+}

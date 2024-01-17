@@ -1,0 +1,37 @@
+<!-- In this topic we wil learn about how we can write css to modify our html page -->
+<!-- There are 3 ways to write css -->
+<!-- 1. Inline css -->
+<!-- 2. Write in the header -->
+<!-- 3. Make an externel file -> Recommended -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three ways to write css</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .heading{
+            color: hotpink;
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body> 
+    <!-- method 1 (Inline) -->
+    <h1 style="color: green; background-color: hotpink;">Heading1 </h1>
+
+    <!-- Method 2 -->
+    <!-- Now give it a class and modified it into the header by calling style attribute -->
+    <h1 class="heading">Heading 2</h1>
+
+    <!-- Now the third method is to write css in the external file by using the link attribute -->
+    <div class="HeadingAndPara">
+        <h1>Heading 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maiores facere vel saepe eius? Accusamus voluptates error vitae. Laudantium, libero.</p>
+    </div>
+
+
+</body>
+</html>

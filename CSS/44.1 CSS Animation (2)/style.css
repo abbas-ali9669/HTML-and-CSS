@@ -1,0 +1,53 @@
+/* As we can write it on short hand just by giving the value of only animation like */
+/* animation: animation-name, duration, fill-mode, delay, iteration-count, timing-function; */
+.box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: lightcoral;
+    position: relative;
+    /* animation-direction: reverse; */
+    animation-name: move-around;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+/* @keyframes move-around{
+    0%{
+        top: 0;
+        left: 0;
+        background: black;
+    }
+    25%{
+        top: 0;
+        left: 300px;
+        background: red;
+    }
+    50%{
+        top: 300px;
+        left: 300px;
+        background: brown;
+    }
+    75%{
+        top: 300px;
+        left: 0;
+        background: blue;
+    }
+    100%{
+        top: 0px;
+        left: 0;
+        background: blueviolet;
+    }
+} */
+
+@keyframes move-around{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+    }    
+}

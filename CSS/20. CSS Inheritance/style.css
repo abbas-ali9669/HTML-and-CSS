@@ -1,0 +1,21 @@
+/* Now here if we will cahnge the color of only bosy the children inside the body tag will change its colors ass well */
+/* And if we want to chnage the color of specific children we have to metion it specifically */
+
+body{
+    color: red;
+}
+
+a{
+    /* The browser give the default styling to this tag */
+    color: darkgoldenrod;
+    text-decoration: none;
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+.container1{
+    color: blue;
+}
+
+.container2{
+    color: green;
+}

@@ -1,0 +1,267 @@
+
+/* 1. For Chnaging font */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    border: 2px solid red;
+    /* margin-bottom: 50px; */
+}
+
+/* 2. For changing font size to make the font bigger */
+p{
+    /* Bydefault is 16px */
+    font-size: 16px;
+
+    /* Line heighting, word spacing, letter spacing */
+    /* line-height: 30px;
+    word-spacing: 5px;
+    letter-spacing: 3px; */
+
+    /* Font weight regular -> 400(normal), bold -> 700 */
+    /* font-weight: 400; */
+
+    /* Padding - Distance between content and border is called padidng */
+    border: 2px solid #4e4e4e;
+    /* padding: 20px 40px; */
+    /* padding: 10px 5px 10px 5px; -> Gor through with clock wise */
+
+    /* Margin - Distance outside from the border */
+    /* Syntax is same as the padding */
+    margin-top: 10px;
+}
+*::selection{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+/* 3. Inline vs Block level Element  */
+a{
+    /* display: inline-block; */
+    border: 2px solid green;
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+    /* Now if we want it to be in the one line and also support everything as margin etc then we have change the display property into the inline-block. Then we can easily give the padding it will not collapse */
+}
+
+/* 4. Specificity */
+/* Inline CSS > #id selector > class selector > element selector */
+.fav{
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+/* Counting Specificity */
+/* _, _, _, _, -> 0, 0, 1, 0  ---> 10*/
+
+ul li.fav{
+    font-size: 25px;
+    background-color: white;
+    color: purple;
+}
+
+/* 0, 0, 1, 2  ----> 12 */
+
+
+ul#mysongs li.fav{
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+/* 0, 1, 1, 2 ----> 112 */
+
+/* 5 Browser default Margin Padding */
+/* In the browser there will be the margin of 8px of heading and the paragraph */
+/* Now there will be finish outlines of the default */ 
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Now we can give our own margin padding etc */
+h1{
+    margin: 10px;
+}
+p{
+    margin: 10px;
+}
+
+a{
+    margin: 10px;
+}
+
+ul{
+    margin: 10px 30px;
+}
+
+/* 6. Now lets talk about some inheritance in css */
+/* if we cnahge the color of body the child of body will inheri t the color of body */
+body{
+    color: black;
+    background-color: white;
+}
+/* If we cahge the color of ul the li item will automatically inherit from its parent */
+ul{
+    color: lightblue;
+}
+
+/* 7. Box Sizing */
+
+.box1{
+    box-sizing: border-box;
+    border: 10px solid blue;
+    margin-bottom: 5px;
+    width: 300px;
+    padding: 50px;
+    /* Here you will see the difference of box sizing and without box sizing */
+}
+/* Now we will give the property of border to box1. The advantsge of boxsizing is no matter how much padding you will give the widget will not increase its width which you have set */
+
+.box2{
+    border: 10px solid red;
+    width: 300px;
+    padding: 50px;
+    /* Here you will see the difference of box sizing and without box sizing */
+}   
+
+/* 8. CSS Pseudo Classes */
+/* Today we will revise the basis pseudo class we will revise */
+/* Link, visited, hover, active */
+/* link mean - not visited */
+a.pseudo1, a.pseudo2{
+    border: none;
+    font-size: 30px;
+    display: inline-block;
+    margin: 10px;
+}
+
+a.pseudo1, a.pseudo2:link{
+    color: orange;
+}
+
+a.pseudo1, a.pseudo2:visited{
+    color: red;
+}
+
+a.pseudo1, a.pseudo2:hover{
+    color: green;
+}
+
+a.pseudo1, a.pseudo2:active{
+    color: black;
+}
+
+/* 9. Input Pseudo Classes */
+/* There are 2 pseudo classes for input fiedl */
+/* 1. Focus, Required */
+input:focus{
+    padding: 5px;
+    outline: none;
+    font-size: 30px;
+}
+
+input:required{
+    color: blueviolet;
+    background-color: cornflowerblue;
+}
+
+/* 10. Some more pesudo classes  */
+
+.body *{
+    border: none;
+}
+
+/* .body p:first-child{
+    color: red;
+} */
+
+
+.body p:first-of-type{
+    color: green;
+}
+
+/* 11. Last child and last of type */
+/* .body p:last-child{
+    color: yellow;
+} */
+
+/* .body p:last-of-type{
+    color: yellow; 
+} */
+
+/* 12. nth child and nth of type */
+/* .body p:nth-child(2){
+    color: tomato;
+} */
+
+.body p:nth-last-of-type(2){
+    color: red;
+}
+
+.body ul.pseudo-item li:nth-child(2n){
+    color: red;
+}
+
+/* 12. :not, :empty, :root */
+div.pseudo-not *{
+    border: none;
+}
+
+/* Those element which are not p modify them */
+body div.pseudo-not :not(p.fancy){
+    color: red;
+}
+
+div.pseudo-not div:empty{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    margin-left: 10px;
+}
+
+/* We are not using this pseudo class as much we use simple body element to modify the frontend. Or we can use html tag  instead :root. But the specificity of root is greater than html. Noramlly the root pseudo class is use declare the variables in css. */
+:root{
+    background-color: #222;
+    color: #eee;
+}
+
+/* 13. Pseudo Elements */
+div.pseudo-element *{
+    border: none;
+}
+
+div.pseudo-element h1::first-letter{
+    text-transform: uppercase;
+    text-decoration: underline wavy 1px;
+    /* font-size: 32px; */
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+div.pseudo-element p::first-line{
+    font-size: 20px;
+}
+
+/* 14. Pseadu element */
+.before-after *{
+    border: none;
+}
+
+div.before-after p::before{
+    content: 'First Heading';
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: underline wavy 2px red;
+}
+
+div.before-after h2::after{
+    content: 'Hello my name is Abbas ali from pakistan';
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}

@@ -1,0 +1,25 @@
+h2{
+    font-size: 35px;
+}
+
+p{
+    font-size: 20px;
+}
+
+@media print{
+    *{
+        color: blue;
+    }
+}
+
+@media all and (max-width: 500px){
+    *{
+        color: brown;
+    }
+}
+
+@media screen{
+    *{
+        color: yellow;
+    }
+}

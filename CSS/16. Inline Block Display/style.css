@@ -1,0 +1,22 @@
+/* Now here we cannot set the top bottom padding margin width height in the inline elements. But there is function that will chnage the inline element into the inline block element */
+
+/* Without Inline-Block Display */
+/* a{
+    border: 2px solid black;
+    padding: 30px;
+    margin: 30px;
+    width: 100px;
+    height: 200px;
+    /*Doesn't working anything *
+}*/
+
+
+/* Now here we have changed the value of display into the inline block therefore we can make changes as the same we can make in block elements in inline elements */
+a{
+    border: 2px solid black;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    padding: 50px;
+    margin: 20px;
+}

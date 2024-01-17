@@ -1,0 +1,69 @@
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: change-bg-color;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change-bg-color{
+    from{
+        background: yellow;
+    }
+    to{
+        background: orange;
+    }   
+}
+
+
+.box2{
+    width: 10px;
+    height: 10px;
+    background: blue;
+    animation-name: grow-width;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+    /* animation-direction: reverse; */
+
+}
+
+@keyframes grow-width{
+    from{
+        width: 10px;
+    }
+    to{
+        width: 300px;
+    }
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    visibility: circle;
+    border-radius: 50%;
+    animation-name: border-styling;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+}
+
+@keyframes border-styling{
+    from{
+        border: green;
+    }
+    to{
+        border-top: 4px solid red;
+        border-right: 4px solid red;
+        border-bottom: 4px solid red;
+        border-left: 4px solid red;
+    }
+
+}

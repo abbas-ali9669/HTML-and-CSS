@@ -1,0 +1,9 @@
+/* p:first-child{
+    This pesudo class will identify the first child as a p not second remember
+    color: red;
+} */
+
+p:first-of-type{
+    /* This pseudo class will identify its first child p tag and change the color of it or modify it. It can be second. */
+    color: red;
+}

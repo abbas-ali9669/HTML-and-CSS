@@ -1,0 +1,35 @@
+/* Today in this class we will learn about only 4 pseudo classes */
+/* link, visited, hover, active */
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: chartreuse;
+}
+
+a:active{
+    color: crimson;
+}
+/* NOTE - Remember this order always write pseaudo classes in this. A simple way to memorize css pseudo order is lvha (link, visited, hover, active)*/
+p:active{
+    background-color: darkcyan;
+}
+p:hover{
+    color: red;
+}
+
+a[href$='pk']:hover{
+    color: black;
+    /* background-color: darkcyan; */
+    text-decoration: overline solid 1px blue;
+}
+
+a[href$='pk']:active{
+    color: darkgreen;
+}

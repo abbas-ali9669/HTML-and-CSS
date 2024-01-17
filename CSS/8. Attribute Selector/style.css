@@ -1,0 +1,43 @@
+header{
+    background-color: #f0ebeb;
+}
+main{
+    background-color: #f2e9e9;
+}
+
+/* Now here we will change the ui of links */
+/* So how we can change th ui. Simply we will take the help of attribute like 'text, href etc' */
+
+/* 1. Here can simply put the link of a tag and modifiy that */
+/* a[href="https://google.co.pk"]{
+    color: chartreuse;
+} */
+
+/* 2. Here we can edit more than one tag/links by giving starts from and end to */
+/* ^=  ->  Which Start from (you will mention) */
+/* *=  ->  All tha include some text (you will mention) */
+/* $=  ->  All that ends with (you will mention) */
+
+/* a[href*="google"]{
+    color: green; */
+/* } */
+
+/* a[href^='https']{
+    color: red; */
+/* } */
+
+/* a[href$='.com']{
+    color: darkcyan;
+} */
+
+/* We can also edit the input */
+/* input[type^='te']{
+    color: darkmagenta;
+} */
+
+/* Now lets come to text entry boxes */
+input[type='text']{
+    color: darkgreen; 
+}
+
+

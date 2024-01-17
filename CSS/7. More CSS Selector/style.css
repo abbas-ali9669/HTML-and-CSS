@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #f0ebeb;
+}
+
+section.main-article{
+    background-color: #f2e9e9;
+}
+
+/* 1. Universal Selector */
+/* Universal selector is used to update the whole site to cahnge or modified the page */
+/* *{
+    color: red;
+} */
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* 2. Descendent/Combonator is use to modified the inside data of tag */
+/* Now if we want to change the colors of our header paragraph */
+header p{
+    color: red;
+}
+
+/* Now lets take the anotehr example  */
+li a{
+    color: green;
+}
+
+/* Now if we want to change the color of h2 in the section tag we can simply do this */
+/* section.main-article h2{
+    color: green;
+} */
+/* But this method will change all the h2 color inside the section but we don't want that. We want only that h2 tags that directly exists in the section */
+/* Called Direct Child Combinator */
+section.main-article > h2{
+    color: green;
+}
+/* This method will do the trick :) */
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* 3. Adjacent Selector */
+/* Chnage the color of that paragraph which directly comes after h2 heading */
+
+h2+p{
+    color: orangered;
+}
+/* This will change the color of paragraphs which directly comes after h2 tags */
+
+/* Lets take another example */
+
+ul+p{
+    color: chocolate;
+}
+
+ul.nav-bar{
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: circle;
+}

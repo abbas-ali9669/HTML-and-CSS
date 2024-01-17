@@ -1,0 +1,31 @@
+h1{
+    border: 5px solid red;
+    /* border-bottom: 4px solid red; */
+    /* Now here we will see the more box model */
+
+    /* 1. Padding */
+    /* padding: 10px 20px;    Shortcut for top bottom */
+    /* padding: 10px 20px 30px 40px;    Count with clockwise */
+    /* padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 20; */
+
+    /* 2. Margin */
+    /* Margin is all about outside padding in simple way*/
+    /* margin: 20px 50px 20px 50px;
+    margin: 20px 50px;    Short hand */
+    /* margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+     */
+
+    /* 3. Box Alligining in the centre */
+    width: 700px;
+    margin: 20px auto;
+    /* text-align: center; */
+    /* padding-left: 20px ; */
+    /* padding-top: 50px; */
+    background-color: blue;
+
+}

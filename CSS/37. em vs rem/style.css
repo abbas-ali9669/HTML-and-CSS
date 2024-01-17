@@ -1,0 +1,17 @@
+/* In the case of using em and rem  */
+/* Recomended way of using em and rem is. When you modify font/text use rem. And when you work with padding, margin etc use em because em adjust automatically when font changes. And in the border you can se px for very thickness  */
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 2rem;
+    border: 4px solid red;
+    padding: 1em;
+    margin: 1em;
+}
+
+p{
+    font-size: 2rem;
+    border: 10px solid black;
+}

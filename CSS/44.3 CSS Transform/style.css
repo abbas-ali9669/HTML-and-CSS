@@ -1,0 +1,31 @@
+/* Today in this topic we will learn about some of transform property like (Scale, Skew, Translate, Rotate etc) */
+.box{
+    width: 100px;
+    height: 100px;
+    background: lightsalmon;
+    font-size: 1.5rem;
+    margin: 100px auto;
+    transition: transform 2s ease-in-out;
+
+    transform-origin: top left;
+        /* This will chnage the origin of rotation. Means where the point is circling */
+    
+    transform: rotate(360deg);
+        /* The rotate property will rortate our box/element by th given coordiantes to clock/anti clockwise direction */
+
+    /* transform: scale(1.5, 1); */
+        /* Bydefault is 1. Scale is used for extend the elements by giving the number of Xaxis and Yaxis */
+
+    /* transform: translateX(50px); */
+        /* Translate is used for changing the position of element. By thier own respect */
+    
+    /* transform: skew(10deg, 10deg ); */
+
+    box-shadow: 0px 0px 40px 0px black;
+}
+
+.box:hover{
+    /* transform: scale(1.5, 1.5); */
+    /* transform: translateY(100%); */
+}
+

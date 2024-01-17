@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* how not class work. those element which are not the p(paragrapgh) Change those colors into the red */
+body :not(p){
+    color: red;
+}
+
+/* Those elements which are empty modify them/it */
+div:empty{
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border: 5px solid red;
+}
+
+/* This root element is just like the html element in the starting but we use this because of specificity. BUt casually we also dont use root we use body element. The body element is working just like this. */
+:root{
+    background-color: #222;
+    color: brown;
+}
