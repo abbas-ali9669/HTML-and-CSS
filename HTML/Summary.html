@@ -1,0 +1,168 @@
+<!-- In this topic we will repeat all the lectures that we have learned before a summary -->
+<!-- Lecures we will cover in this summary -->
+<!-- 1. Html Structure -->
+<!-- 2. Html title, metatags -->
+<!-- 3. Html Heading, paragraph linebrakes -->
+<!-- 4. Link, Images -->
+<!-- 5. Tables -->
+<!-- 6. Html Forms -->
+<!-- 7. ID and classes -->
+<!-- 8. Style tags -->
+<!-- 9. div and span -->
+<!-- 10. Html Semantic elements -->
+<!-- 11. Html eintities -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- html meta tags -->
+    <meta name="description" content="This is main html summary">
+    <meta name="Author" content="Abbas Ali">
+    <meta name="keywords" content="Hmtl, lectures, tutorials, summary">
+    <title>Html Summary</title>
+    <!-- 8. Style tags -->
+    <style>
+        .Heading1{
+            color: blanchedalmond;
+            background-color: black;
+        }
+        #Heading2{
+            color: blue;
+            background-color: burlywood;
+        }
+        .Container1{
+            color: blanchedalmond;
+            background-color: black;
+        }
+        .Container2{
+            color: blue;
+            background-color: burlywood;
+        }
+        .Highlight{
+            background-color: blue;
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3. Html Heading, paragraph linebrakes -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <h3>This is paragraph</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, <br> voluptatibus fuga hic harum dolorum error! Mollitia enim odio repellat iure et inventore ab, rem excepturi earum expedita soluta, <br> quod, quaerat corporis alias doloribus. Deleniti tempora sed dolorem, facilis quod iste quam aut nulla non repellat laudantium, porro hic commodi? Sint.</p>
+    <hr>
+
+    <h2>Link, Images</h2>
+    <!-- 4. Link, Images -->
+    <!-- For images and link we use A tag and for images and we use IMG tag -->
+    <a href="https://google.com" target="_blank" title="Go to Google">Google Link</a> <br><br>
+    <img src="7. Working With Images/wall2.png" alt="A wall image">
+    <hr>
+
+
+    <!-- 5. Tables -->
+    <h2>Tables</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Abbas</td>
+                <td>Ali</td>
+            </tr>
+            <tr>
+                <td>Bilal</td>
+                <td>Ahmad</td>
+            </tr>
+            <tr>
+                <td>Khan</td>
+                <td>Bahadur</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+
+    <!-- 6. Html Forms -->
+    <h2>Html Forms</h2>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Username"> <br><br>
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass" placeholder="Password"> <br>
+
+        <p>Select Gender:</p>
+        <label for="male">Male: </label>
+        <input type="radio" name="gender" id="male" value="male"> <br>
+
+        <label for="female">Female: </label>
+        <input type="radio" name="gender" id="female" value="female"> <br>
+
+        <label for="other">Other: </label>
+        <input type="radio" name="gender" id="other" value="other"> <br><br>
+
+        <label for="country"> Select Country: </label>
+        <select  id="country">
+            <option value="india">India</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="italy">Italy</option>
+        </select>
+        <P><strong>Write about yourself :</strong></P>
+        <textarea placeholder="Write about yourself" cols="30" rows="10"></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <!-- 7. ID and classes -->
+    <h2>ID and classes: </h2>
+    <!-- Let make two container -->
+    <h1 class="Heading1">Heading 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae neque ipsum est, accusantium quo expedita distinctio ab ducimus tempora architecto harum officia et reprehenderit sed saepe ad sequi <br> quis suscipit dignissimos repudiandae tenetur rem omnis? Perspiciatis a, pariatur assumenda, repellendus nobis, beatae soluta consequuntur enim dicta officiis aspernatur quis.</p>
+    <br>
+    <h1 id="Heading2">Heading 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis accusantium ipsum incidunt rerum mollitia ad? Perspiciatis, labore cumque. Ut officia commodi eos illo deleniti consequuntur <br> voluptate facere quos, iste reprehenderit debitis excepturi libero inventore explicabo similique, tempore, distinctio velit nostrum modi dicta pariatur unde ex. Hic illum placeat facilis.</p>
+    <br>
+    <hr>
+
+    <!-- 9. div and span -->
+    <!-- We put our data into a container to make it easy to control -->
+    <!-- span is use for low level edting -->
+    <h2>div and span</h2>
+    <div class="Container1">
+    <h1>Heading 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae neque ipsum est, accusantium quo expedita distinctio ab ducimus tempora architecto harum officia et <span class="Highlight">reprehenderit</span>  sed saepe ad sequi <br> quis suscipit dignissimos repudiandae tenetur rem omnis? Perspiciatis a, pariatur assumenda, repellendus nobis, beatae soluta consequuntur enim dicta officiis aspernatur quis.</p>
+    </div>
+
+    <br>
+    <div class="Container2">
+    <h1 id="Heading2">Heading 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis accusantium ipsum incidunt rerum mollitia ad? Perspiciatis, labore cumque. Ut officia commodi eos illo deleniti consequuntur <br> voluptate facere quos, iste reprehenderit debitis excepturi libero inventore explicabo similique, tempore, distinctio velit nostrum modi dicta pariatur unde ex. Hic illum placeat facilis.</p>
+    </div>
+    <br>
+    <hr>
+
+    <!-- 11. Html eintities -->
+    <h2>Html eintities</h2>
+    <!-- Entities use for special symbols -->
+    <p>Copyright &copy;</p>
+    <p>&lt;</p>
+    <p>&gt;</p>
+    <p>&amp;</p>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!-- In this topic we will learn about how we can create the list in html -->
+<!-- There are three type of list in html -->
+<!-- 1. Oredered List -->
+<!-- 2. UnOredered List -->
+<!-- 3. Discriptive List -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List in HTML</title>
+</head>
+<body>
+    <h2>Ordered List</h2>
+    <!-- First we will define ordered list -->
+    <ol type="A">    <!-- For ordered list we use ol tag -->
+        <!-- For defining item We use li -> List Items -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    
+    <h2>Unordered list</h2>
+    <!-- Now we will define Unordered list -->
+    <ul style="list-style-type: default;">    <!-- For unordered list we use tag ul -->
+        <!-- For defining item We use li -> List Items -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <!-- There are no numbering in the unordered list because of unordered. We use inline css to give numbering -->
+    </ul>
+
+    <h2>Discriptive List</h2>
+    <!-- Now we will define discriptive list -->
+    <dl>    <!-- For defining discriptive list we use dl -->
+
+        <!-- For defining the list term we use dt tag Discriptive Term -->
+        <dt>Python</dt>
+        <!-- For Writing the term discription  -->
+        <dd>    <!-- For describing the discriptive list we use dd tag -->
+            Python is the high level programing language which is famous for machine learning <br> and AI (Artificial Intelligence). For More go to <a href="https://google.com/Python" target="_blank" title="Search for python Expertise"> Google </a>
+        </dd>
+        <br>
+
+        <dt> JAVA</dt>
+            <dd>Java is another high level prgramming language which is famous for building mobile <br> and desktop apps. For more go to 
+            <a href="https://google.com/Java" target="_blank" title="Search for Java Expertise"> Google </a>
+            </dd>
+        <br>
+
+        <dt>JavaScript</dt>
+        <dd>JavaScript is another high level programming language which is famous for building <br> web apps and web development. For more go to
+        <a href="https://google.com/javascript" target="_blank" title="Search for Javascript Expertise"> Google </a>
+        </dd>
+    </dl>
+
+</body>
+</html>
